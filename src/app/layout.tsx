@@ -10,8 +10,8 @@ import { Montserrat } from "next/font/google";
 
 
 export const metadata: Metadata = {
-  title: 'TacosVictorMTL | Authentic Tacos in Montreal',
-  description: 'Experience authentic Mexican tacos in the heart of MTL. Fresh ingredients, handmade tortillas, and pure satisfaction.',
+  title: "TacosVictorMTL ",
+  description: "Experience authentic Mexican tacos in the heart of MTL. Fresh ingredients, handmade tortillas, and pure satisfaction.",
 };
 
 const montserrat = Montserrat({
