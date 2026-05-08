@@ -43,7 +43,7 @@ export default function LandingPage() {
 
   <div id="hero" data-section="hero">
       <HeroOverlayTestimonial
-      title="Tacos Auténticos, Sabor de Montreal, Pura Satisfacción"
+      title="Tacos Victor Montréal"
       description="Tacos artesanales hechos frescos diariamente con ingredientes premium. Experimenta el sabor de México en el corazón de MTL."
       testimonials={[
         { name: "Marc L.", imageSrc: "http://img.b2bpic.net/free-photo/portrait-waitress-standing-counter_1170-668.jpg", handle: "@mtlfoodie", testimonial: "¡Los mejores tacos de la ciudad, sin duda!", rating: 5 },
