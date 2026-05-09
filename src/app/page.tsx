@@ -149,14 +149,15 @@ export default function LandingPage() {
       inputPlaceholder="Tu correo electrónico"
       buttonText="Enviar mensaje"
       centered={true}
+      useInvertedBackground={false}
     />
   </div>
 
   <div id="footer" data-section="footer">
       <FooterLogoEmphasis
       columns={[
-        { title: "Menú", items: [{ label: "Tacos", href: "#menu" }, { label: "Bebidas", href: "#menu" }] },
-        { title: "Info", items: [{ label: "Sobre", href: "#about" }, { label: "Contacto", href: "#contact" }] },
+        { items: [{ label: "Tacos", href: "#menu" }, { label: "Bebidas", href: "#menu" }] },
+        { items: [{ label: "Sobre", href: "#about" }, { label: "Contacto", href: "#contact" }] },
       ]}
       logoText="Tacos Victor Montréal"
     />
