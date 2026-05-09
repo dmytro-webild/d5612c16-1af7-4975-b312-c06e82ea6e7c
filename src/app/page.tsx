@@ -152,6 +152,9 @@ export default function LandingPage() {
       centered={true}
       useInvertedBackground={false}
     />
+    <p className="text-center text-xs mt-4">
+        Al enviar este mensaje, aceptas nuestros términos y condiciones.
+    </p>
   </div>
 
   <div id="footer" data-section="footer">
