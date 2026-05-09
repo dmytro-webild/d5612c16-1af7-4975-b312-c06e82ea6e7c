@@ -29,7 +29,7 @@ export default function LandingPage() {
         headingFontWeight="light"
     >
       <ReactLenis root>
-  <div id="nav" data-section="nav">
+  <div id="nav" data-section="nav" className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm">
       <NavbarStyleFullscreen
       navItems={[
         { name: "Inicio", id: "hero" },
