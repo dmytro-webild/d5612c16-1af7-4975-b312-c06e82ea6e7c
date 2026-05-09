@@ -2,16 +2,16 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactCTA from '@/components/sections/contact/ContactCTA';
-import FaqSplitText from '@/components/sections/faq/FaqSplitText';
+import ContactForm from '@/components/form/ContactForm';
+import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
 import HeroOverlayTestimonial from '@/components/sections/hero/HeroOverlayTestimonial';
-import MetricCardThree from '@/components/sections/metrics/MetricCardThree';
+import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
-import TestimonialCardTwelve from '@/components/sections/testimonial/TestimonialCardTwelve';
+import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
 import { Award, CheckCircle, Star, Utensils } from "lucide-react";
 
 export default function LandingPage() {
@@ -49,19 +49,9 @@ export default function LandingPage() {
         { name: "Marc L.", imageSrc: "http://img.b2bpic.net/free-photo/portrait-waitress-standing-counter_1170-668.jpg", handle: "@mtlfoodie", testimonial: "¡Los mejores tacos de la ciudad, sin duda!", rating: 5 },
         { name: "Sophie B.", imageSrc: "http://img.b2bpic.net/free-photo/front-view-beautiful-girl-with-lemons_23-2148483076.jpg", handle: "@mtleats", testimonial: "Sabores auténticos y frescos.", rating: 5 },
         { name: "Jean P.", imageSrc: "http://img.b2bpic.net/free-photo/friends-eating-conversating-restaurant_23-2148006709.jpg", handle: "@tacolover", testimonial: "Lugar de almuerzo rápido con calidad increíble.", rating: 4 },
-        { name: "Camille R.", imageSrc: "http://img.b2bpic.net/free-photo/young-handsome-man-smiling-cheerfully-showing-thumbs-up-standing-pink-wall_141793-23039.jpg", handle: "@montrealfood", testimonial: "Una joya oculta en MTL.", rating: 5 },
-        { name: "Alex D.", imageSrc: "http://img.b2bpic.net/free-photo/front-view-male-courier-yellow-uniform-holding-delivery-bowl-light-pink-background_140725-40686.jpg", handle: "@foodie", testimonial: "El pastor es la perfección.", rating: 5 },
       ]}
       buttons={[{ text: "Ver Menú y Ordenar Ahora", href: "#menu" }]}
       imageSrc="http://img.b2bpic.net/free-photo/top-view-tasty-mexican-food-ready-be-served_23-2148614398.jpg"
-      avatars={[
-        { src: "http://img.b2bpic.net/free-photo/medium-shot-smiley-woman-with-food_23-2148899052.jpg", alt: "Cliente 1" },
-        { src: "http://img.b2bpic.net/free-photo/smiling-man-enjoying-croissant_1170-631.jpg", alt: "Cliente 2" },
-        { src: "http://img.b2bpic.net/free-photo/happy-young-female-student-eating-fast-food-fast-food-cheat-meal_169016-67586.jpg", alt: "Cliente 3" },
-        { src: "http://img.b2bpic.net/free-photo/medium-shot-smiley-woman-with-kebab_23-2148773545.jpg", alt: "Cliente 4" },
-        { src: "http://img.b2bpic.net/free-photo/hipster-with-stylish-haircut-beard-sits-table-roadside-cafe-drinks-soda-hot-day_613910-19633.jpg", alt: "Cliente 5" },
-      ]}
-      avatarText="Amado por más de 50k fans de los tacos en Montreal"
     />
   </div>
 
@@ -70,7 +60,7 @@ export default function LandingPage() {
       useInvertedBackground={true}
       tag="Nuestra Historia"
       title="De México a Montreal"
-      description="Nacidos de una pasión por los sabores tradicionales, traemos el corazón de la cocina callejera a las calles de Montreal. Cada taco es un tributo a nuestra herencia."
+      description="Nacidos de una pasión por los sabores tradicionales, traemos el corazón de la cocina callejera a las calles de Montreal."
       subdescription="Fresco, de origen local y elaborado con amor, nuestra cocina es donde la tradición se encuentra con la vibrante escena culinaria de MTL."
       imageSrc="http://img.b2bpic.net/free-photo/mexican-food-concept-with-tacos-plate_23-2147812205.jpg"
       mediaAnimation="slide-up"
@@ -86,10 +76,9 @@ export default function LandingPage() {
       features={[
         { title: "Ingredientes Frescos", description: "Productos de origen local y carnes premium entregados diariamente.", imageSrc: "http://img.b2bpic.net/free-photo/top-view-fresh-tortillas-with-meat-vegetables_23-2148614372.jpg" },
         { title: "Tortillas Artesanales", description: "Hechas frescas durante todo el día para esa textura auténtica.", imageSrc: "http://img.b2bpic.net/free-photo/flat-lay-mexican-food-composition_23-2148131285.jpg" },
-        { title: "Recetas Auténticas", description: "Recetas generacionales inspiradas en la mejor comida callejera de México.", imageSrc: "http://img.b2bpic.net/free-photo/overhead-view-tomato-soup-blue-bowl-brown-wooden-tray-mixed-color-table_140725-86972.jpg" },
       ]}
       title="Lo que nos hace especiales"
-      description="No tomamos atajos. Desde nuestras tortillas prensadas a mano hasta nuestras salsas caseras exclusivas, la calidad está en nuestro ADN."
+      description="No tomamos atajos. La calidad está en nuestro ADN."
     />
   </div>
 
@@ -103,92 +92,71 @@ export default function LandingPage() {
         { id: "p1", name: "Al Pastor", price: "$4.50", imageSrc: "http://img.b2bpic.net/free-photo/close-up-delicious-tacos-with-avocado_23-2152026865.jpg" },
         { id: "p2", name: "Carne Asada", price: "$5.00", imageSrc: "http://img.b2bpic.net/free-photo/flat-lay-tortilla-with-meat-vegetables_23-2148750445.jpg" },
         { id: "p3", name: "Frijoles Negros y Aguacate", price: "$4.00", imageSrc: "http://img.b2bpic.net/free-photo/front-view-hands-holding-delicious-taco_23-2151048050.jpg" },
-        { id: "p4", name: "Pescado estilo Baja", price: "$5.50", imageSrc: "http://img.b2bpic.net/free-photo/palatable-shrimp-dish_23-2147761580.jpg" },
-        { id: "p5", name: "Chorizo", price: "$4.50", imageSrc: "http://img.b2bpic.net/free-photo/guacamole_23-2148024743.jpg" },
-        { id: "p6", name: "Camarones a la Parrilla", price: "$5.50", imageSrc: "http://img.b2bpic.net/free-photo/top-view-tacos-with-shrimps_23-2148629378.jpg" },
       ]}
-      title="Nuestro Menú de Tacos"
-      description="Explora nuestra selección curada de tacos auténticos de estilo callejero."
+      title="Nuestro Menú"
+      description="Explora nuestra selección de tacos auténticos."
     />
   </div>
 
   <div id="metrics" data-section="metrics">
-      <MetricCardThree
+      <MetricCardOne
       animationType="slide-up"
       textboxLayout="default"
+      gridVariant="uniform-all-items-equal"
       useInvertedBackground={false}
       metrics={[
-        { id: "m1", icon: CheckCircle, title: "Tacos Servidos", value: "50,000+" },
-        { id: "m2", icon: Star, title: "Clientes Diarios", value: "200+" },
-        { id: "m3", icon: Award, title: "Locales de Montreal", value: "100%" },
+        { id: "m1", icon: CheckCircle, title: "Tacos Servidos", value: "50,000+", description: "Servidos con amor" },
+        { id: "m2", icon: Star, title: "Clientes Diarios", value: "200+", description: "Fans satisfechos" },
+        { id: "m3", icon: Award, title: "Locales MTL", value: "100%", description: "Corazón de la ciudad" },
       ]}
       title="En Números"
-      description="Sirviendo a Montreal con amor y sabores auténticos cada día."
+      description="Crecimiento constante basado en calidad."
     />
   </div>
 
   <div id="testimonials" data-section="testimonials">
-      <TestimonialCardTwelve
+      <TestimonialCardTen
       useInvertedBackground={true}
+      textboxLayout="default"
       testimonials={[
-        { id: "t1", name: "Sarah J.", imageSrc: "http://img.b2bpic.net/free-photo/side-view-man-eating-clubsandwich-served-with-ketchup-french-fries_140725-12120.jpg" },
-        { id: "t2", name: "Michael C.", imageSrc: "http://img.b2bpic.net/free-photo/portrait-adorable-blue-eyed-female-model-with-hair-knot-wears-overalls-enjoys-drinking-fruit-smoothie-looks-happily-somewhere-while-sits-cozy-restaurant-beautiful-teenage-girl-coffee-shop_273609-3038.jpg" },
-        { id: "t3", name: "Emily R.", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-friends-with-delicious-cocktails_23-2150244937.jpg" },
-        { id: "t4", name: "David K.", imageSrc: "http://img.b2bpic.net/free-photo/man-dancing-with-woman-restaurant_23-2148016782.jpg" },
-        { id: "t5", name: "Julie M.", imageSrc: "http://img.b2bpic.net/free-photo/professional-barber-man-apron-looking-front-smiliung-cheerfully-showing-ok-sign-standing-orange-wall_141793-96581.jpg" },
+        { id: "t1", title: "Increíble", quote: "¡Los mejores tacos de MTL!", name: "Sarah J.", role: "Foodie" },
+        { id: "t2", title: "Auténtico", quote: "Sabor real mexicano.", name: "Michael C.", role: "Cliente" },
       ]}
-      cardTitle="Lo Que Dicen Nuestros Fans"
-      cardTag="Testimonios"
-      cardAnimation="slide-up"
+      title="Lo Que Dicen"
+      description="Nuestros clientes aman el sabor."
     />
   </div>
 
   <div id="faq" data-section="faq">
-      <FaqSplitText
+      <FaqSplitMedia
       useInvertedBackground={false}
       faqs={[
-        { id: "f1", title: "¿Ofrecen catering?", content: "Sí, ofrecemos catering para almuerzos de oficina y eventos especiales." },
-        { id: "f2", title: "¿Tienen opciones veganas?", content: "Absolutamente, nuestros tacos de frijoles negros son deliciosos." },
-        { id: "f3", title: "¿Dónde están ubicados?", content: "Estamos en el corazón de Montreal - revisa nuestra sección de contacto." },
+        { id: "f1", title: "¿Ofrecen catering?", content: "Sí, contáctanos para eventos." },
+        { id: "f2", title: "¿Opciones veganas?", content: "Sí, tenemos opciones deliciosas." },
       ]}
-      sideTitle="Preguntas Frecuentes"
+      title="Preguntas Frecuentes"
+      description="Resuelve tus dudas aquí."
       faqsAnimation="slide-up"
+      textboxLayout="split"
     />
   </div>
 
   <div id="contact" data-section="contact">
-      <ContactCTA
-      useInvertedBackground={true}
-      background={{ variant: "plain" }}
-      tag="Contáctanos"
-      title="¿Tienes antojo de un taco?"
-      description="Visítanos en nuestra tienda en Montreal o pide en línea para recoger."
-      buttons={[{ text: "Visita nuestra tienda", href: "#" }]}
+      <ContactForm
+      tag="Contacto"
+      title="¿Tienes antojo?"
+      description="Ponte en contacto con nosotros para cualquier consulta o pedido especial."
+      inputPlaceholder="Tu correo electrónico"
+      buttonText="Enviar mensaje"
+      centered={true}
     />
   </div>
 
   <div id="footer" data-section="footer">
       <FooterLogoEmphasis
       columns={[
-        {
-          items: [
-            { label: "Inicio", href: "/" },
-            { label: "Menú", href: "#menu" },
-            { label: "Sobre Nosotros", href: "#about" },
-          ],
-        },
-        {
-          items: [
-            { label: "Facebook", href: "#" },
-            { label: "Instagram", href: "#" },
-          ],
-        },
-        {
-          items: [
-            { label: "Privacidad", href: "#" },
-            { label: "Contacto", href: "#contact" },
-          ],
-        },
+        { title: "Menú", items: [{ label: "Tacos", href: "#menu" }, { label: "Bebidas", href: "#menu" }] },
+        { title: "Info", items: [{ label: "Sobre", href: "#about" }, { label: "Contacto", href: "#contact" }] },
       ]}
       logoText="Tacos Victor Montréal"
     />
