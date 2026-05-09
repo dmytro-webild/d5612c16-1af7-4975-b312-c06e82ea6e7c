@@ -8,7 +8,7 @@ import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
 import HeroOverlayTestimonial from '@/components/sections/hero/HeroOverlayTestimonial';
 import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
-import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
+import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
 import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
@@ -30,7 +30,7 @@ export default function LandingPage() {
     >
       <ReactLenis root>
   <div id="nav" data-section="nav">
-      <NavbarLayoutFloatingOverlay
+      <NavbarStyleFullscreen
       navItems={[
         { name: "Inicio", id: "hero" },
         { name: "Sobre Nosotros", id: "about" },
