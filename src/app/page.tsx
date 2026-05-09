@@ -35,6 +35,7 @@ export default function LandingPage() {
         { name: "Inicio", id: "hero" },
         { name: "Sobre Nosotros", id: "about" },
         { name: "Menú", id: "menu" },
+        { name: "FAQ", id: "faq" },
         { name: "Contacto", id: "contact" },
       ]}
       brandName="Tacos Victor Montréal"
@@ -157,7 +158,7 @@ export default function LandingPage() {
       <FooterLogoEmphasis
       columns={[
         { items: [{ label: "Tacos", href: "#menu" }, { label: "Bebidas", href: "#menu" }] },
-        { items: [{ label: "Sobre", href: "#about" }, { label: "Contacto", href: "#contact" }] },
+        { items: [{ label: "Sobre", href: "#about" }, { label: "FAQ", href: "#faq" }, { label: "Contacto", href: "#contact" }] },
       ]}
       logoText="Tacos Victor Montréal"
     />
