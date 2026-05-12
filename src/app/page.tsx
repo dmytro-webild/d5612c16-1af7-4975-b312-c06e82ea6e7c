@@ -8,7 +8,6 @@ import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
 import HeroOverlayTestimonial from '@/components/sections/hero/HeroOverlayTestimonial';
 import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
-import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
 import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
@@ -29,19 +28,6 @@ export default function LandingPage() {
         headingFontWeight="light"
     >
       <ReactLenis root>
-  <div id="nav" data-section="nav" className="sticky top-0 z-50 bg-white">
-      <NavbarStyleFullscreen
-      navItems={[
-        { name: "Inicio", id: "hero" },
-        { name: "Sobre Nosotros", id: "about" },
-        { name: "Menú", id: "menu" },
-        { name: "FAQ", id: "faq" },
-        { name: "Contacto", id: "contact" },
-      ]}
-      brandName="Tacos Victor Montréal"
-    />
-  </div>
-
   <div id="hero" data-section="hero">
       <HeroOverlayTestimonial
       title="Tacos Victor Montréal"
